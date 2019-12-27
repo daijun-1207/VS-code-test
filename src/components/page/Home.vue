@@ -13,7 +13,7 @@
     <div class="contain">
       <div class="list-item" v-for="(image, index) in images" :key="index">
         <div class="item">
-          <img v-lazy='image'>
+          <img v-lazy="image" />
           <div class="text">描述</div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default {
         "https://img.yzcdn.cn/vant/apple-2.jpg",
         "https://img.yzcdn.cn/vant/apple-2.jpg",
         "https://img.yzcdn.cn/vant/apple-2.jpg",
-        "https://img.yzcdn.cn/vant/apple-2.jpg",
+        "https://img.yzcdn.cn/vant/apple-2.jpg"
       ]
     };
   },
@@ -65,18 +65,18 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
-.van-nav-bar{
-  background-color: #24ABF2;
+.van-nav-bar {
+  background-color: #24abf2;
 }
 .sweiper {
   width: 100%;
-   .van-image {
-      width: 100%;
-    }
+  .van-image {
+    width: 100%;
+  }
   .van-swipe-item {
     box-sizing: border-box;
     padding: 10px;
-   
+
     img {
       width: 100%;
       border-radius: 10px;
@@ -97,17 +97,17 @@ export default {
     &:nth-child(1) {
       margin-left: 0px;
     }
-    .item{
+    .item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      img{
+      img {
         width: 100%;
       }
-      div{
-      margin-top: 5px;
-    }
+      div {
+        margin-top: 5px;
+      }
     }
   }
 }
